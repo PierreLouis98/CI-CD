@@ -1,7 +1,7 @@
 # test_addition.py
 
 import pytest
-from src.calculator import add, multiply
+from src.calculator import add, multiply, divide
 
 def test_add():
     result = add(3, 4)
@@ -10,6 +10,10 @@ def test_add():
 def test_multiply():
     result = multiply(3, 4)
     assert result == 12
+
+def test_divide():
+    result = divide(4, 2)
+    assert result == 2
 
 def test_add_string():
     with pytest.raises(TypeError):
