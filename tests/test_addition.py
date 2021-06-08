@@ -1,7 +1,7 @@
 # test_addition.py
 
 import pytest
-from src.calculator import add, multiply, divide
+from src.calculator import add, multiply, divide, subtract
 
 def test_add():
     result = add(3, 4)
@@ -13,6 +13,10 @@ def test_multiply():
 
 def test_divide():
     result = divide(4, 2)
+    assert result == 2
+
+def test_subtract():
+    result = subtract(4, 2)
     assert result == 2
 
 def test_add_string():
