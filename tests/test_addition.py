@@ -19,6 +19,10 @@ def test_subtract():
     result = subtract(4, 2)
     assert result == 2
 
+def test_divide_2():
+    result = divide(3, 2)
+    assert result == 1.5
+
 def test_add_string():
     with pytest.raises(TypeError):
         add("string", 4)
